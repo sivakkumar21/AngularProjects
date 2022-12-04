@@ -1,0 +1,21 @@
+ul {
+    list-style: none;
+    color: black;
+    background-color: gray;
+    padding: 4px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 5px;
+
+
+}
+
+li:hover {
+    background-color: white;
+}
+
+ul li.activeclass {
+    background-color: gray;
+}
