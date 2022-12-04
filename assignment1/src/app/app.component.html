@@ -1,0 +1,32 @@
+<div [style.background-color]=bgColor id="message">
+  Change the background colour of this section.
+</div>
+<label>
+  <p id="pickAcolor">Pick a Color for background</p>
+</label>
+<input type="color" value="#ff0000" [(ngModel)]="bgColor">
+
+<div id="loginForm">
+  <form>
+    <table>
+      <tr>
+        <td>
+          Username
+        </td>
+        <td>
+          <input type="text" name="username" [(ngModel)]="username">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Password
+        </td>
+        <td>
+          <input type="password" name="password" [(ngModel)]="password">
+        </td>
+      </tr>
+
+    </table>
+    <input type="submit" value="Login" (click)="submit()">
+  </form>
+</div>
